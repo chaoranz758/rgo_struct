@@ -18,7 +18,7 @@ type CreateUserRequest struct {
 }
 
 type CreateUserResponse struct {
-	BaseResp BaseResp
+	BaseResp *BaseResp
 }
 
 type MGetUserRequest struct {
@@ -26,6 +26,6 @@ type MGetUserRequest struct {
 }
 
 type MGetUserResponse struct {
-	Users    []User
-	BaseResp BaseResp
+	Users    []*User
+	BaseResp *BaseResp
 }
